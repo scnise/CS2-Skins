@@ -4,7 +4,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
 BOT_TOKEN = "8647898726:AAHEuF_PWXCLI_HV5IhC4hPjc8p8q-ANDlY"
-WEB_APP_URL = "https://github.com/scnise/CS2-Skins"
+WEB_APP_URL = "http://127.0.0.1:4040/inspect/http"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
@@ -25,6 +25,11 @@ async def start_handler(message: types.Message):
 
 async def main():
     await dp.start_polling(bot)
+
+async def on_startup():
+    print("---------------------------------")
+    print("Бот успешно запущен и готов к работе!")
+    print("---------------------------------")
 
 if __name__ == "__main__":
     asyncio.run(main())
