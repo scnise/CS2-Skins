@@ -4,7 +4,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
 BOT_TOKEN = "8647898726:AAHEuF_PWXCLI_HV5IhC4hPjc8p8q-ANDlY"
-WEB_APP_URL = "https://368c-135-136-6-98.ngrok-free.app/"
+WEB_APP_URL = "http://localhost:8080/"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
